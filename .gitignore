@@ -1,0 +1,91 @@
+
+# pixi environments
+.pixi
+*.egg-info
+
+# ------------------------------------------------------------------------------
+# ROS workspaces (Catkin & Colcon)
+# ------------------------------------------------------------------------------
+/build/
+build_isolated/
+/devel/
+devel_isolated/
+/install/
+install_isolated/
+/log/
+/logs/
+/.cactin_tools/        # legacy typo guard? (see .catkin_tools below)
+.catkin_tools/
+.colcon/
+
+# Sometimes people build in package subfolders (not recommended)
+**/build/
+**/devel/
+**/install/
+
+# ------------------------------------------------------------------------------
+# ROS recordings & caches
+# ------------------------------------------------------------------------------
+*.bag
+*.bag.active
+.bag.tmp
+.ros/                  # local runtime cache on dev machines
+
+# ------------------------------------------------------------------------------
+# Gazebo / Ignition (sim) clutter
+# ------------------------------------------------------------------------------
+.gazebo/
+ignition/
+
+# ------------------------------------------------------------------------------
+# Python
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ------------------------------------------------------------------------------
+# C/C++ build system leftovers (outside ignored build dirs)
+# ------------------------------------------------------------------------------
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+**/*.o
+**/*.so
+**/*.a
+
+# Optional: compilation database (uncomment to ignore if you don't commit it)
+# compile_commands.json
+
+# ------------------------------------------------------------------------------
+# IDEs & editors
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.kate-swp
+
+# ------------------------------------------------------------------------------
+# OS cruft
+# ------------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------------------------
+# Maps & generated assets (optional—uncomment if you generate these)
+# ------------------------------------------------------------------------------
+# *.pgm
+# *.yaml
+# *.bt
+# maps/
+# media/
+# generated/
+
+# ------------------------------------------------------------------------------
+# Keep these tracked (important workspace metadata)
+# ------------------------------------------------------------------------------
+!.rosinstall
+
+src/kalibr
