@@ -8,7 +8,8 @@ version = "0.1.0"
 [tasks]
 git-clone = "git clone https://github.com/alejandrofontan/kalibr.git src/kalibr && catkin init"
 build = "catkin build -j8 --cmake-args -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_VERSION_MINIMUM=3.5"
-kalibr_calibrate = {cmd = "./scripts/calibrate.sh"}
+kalibr-calibrate = {cmd = "./scripts/calibrate.sh"}
+kalibr-calibrate-stereo-rig = {cmd = "./scripts/calibrate_stereo_rig.sh"}
 
 [dependencies]
 python = {version="3.9.18", build="h0755675_0_cpython", channel="https://fast.prefix.dev/conda-forge"}
@@ -35,6 +36,11 @@ tk ="*"
 pyx="*"
 libtiff="*"
 tqdm="*"
-
+av = "*"
+pillow = "*"
+ffmpeg-python = "*"
+ffmpeg = "*"
+exiftool = "*"
+ 
 [pypi-dependencies]
 igraph="*"
